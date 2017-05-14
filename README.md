@@ -5,7 +5,8 @@
   - Controllers turn off automatically when you shutdown your computer
   - With battery indicators
   
-Support me if you would like to!
+  -------------------------------
+Support me if you would like to!  
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6MLLT5T7XDNWQ)
 
  # 1. Requirements
