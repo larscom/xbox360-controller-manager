@@ -8,7 +8,6 @@
 Support me if you would like to!
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6MLLT5T7XDNWQ)
 
- ----------------------------------------------------------------------------------------
  # 1. Requirements
 - .NET Framework 4.5 is required. Download [here](https://www.microsoft.com/en-us/download/details.aspx?id=30653)
 - DirectX runtimes are required. Download [here](http://www.microsoft.com/en-us/download/confirmation.aspx?id=8109)
