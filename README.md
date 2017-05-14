@@ -22,34 +22,41 @@ Support me if you would like to!
 ---------------------------------------------------------------------------------------------
 
 # FAQ
-Q : I get the error "unable to load xinput1_3.dll", how can i fix this?
+Q : I get the error "unable to load xinput1_3.dll" how can i fix this?    
 A : Install the DirectX runtimes -> See Requirements
 
 # Change log
+
 Version 2.0 (April 19, 2017) (Current)
 - **Controllers will now turn off on computer shutdown**
 - Added an option in the contextmenu to auto start the application on windows startup. (this means you can put the .exe anywhere on your pc)
-- When you click on a controller in the contextmenu it'll also turn off
+- When you click on a controller in the contextmenu it'll also turn off  
+
 
 Version 1.9 (November 14, 2016)
-- Now shows an error message if the application is unable to start
+- Now shows an error message if the application is unable to start  
+
 
 Version 1.8 (July 29, 2016)
-- **New icon!**
-- Optimized performance
-- Controllers turn off on application shutdown
-- Controllers will no longer turn off on computer shutdown
+- **New icon!**  
+- Optimized performance  
+- Controllers turn off on application shutdown  
+- Controllers will no longer turn off on computer shutdown  
 
-Version 1.7 (January 07, 2016)
-- Controllers will now turn off on computer shutdown
-- Fixed bug with multiple controllers not turning off properly
 
-Version 1.6 (December 25, 2015)
-- Optimized performance
+Version 1.7 (January 07, 2016)  
+- Controllers will now turn off on computer shutdown  
+- Fixed bug with multiple controllers not turning off properly  
 
-Version 1.5 (December 22, 2015)
-- Added graphical battery indicators
-- Fixed some minor issues
 
-Version 1.0 (December 12, 2015)
-- Released
+Version 1.6 (December 25, 2015)  
+- Optimized performance  
+
+
+Version 1.5 (December 22, 2015)  
+- Added graphical battery indicators  
+- Fixed some minor issues  
+
+
+Version 1.0 (December 12, 2015)  
+- Released 
