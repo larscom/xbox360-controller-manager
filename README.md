@@ -17,7 +17,8 @@ Support me if you would like to!
  - Place the .exe anywhere on your PC
  - Double click it
  - At the bottom right, an icon appears in the taskbar
- - Press right mouse button on it for 'autostart on startup' or battery status!   
+ - Press right mouse button on the icon for 'autostart on startup', battery status or left click on one of the controllers to turn it off
+ - Press and **hold** both the **'START'** and **'BACK'** button at the same time to turn off the controller
  
 [![Download](https://assets.larscom.nl/xbox360/youtube-video.png)](https://www.youtube.com/watch?v=63WBfvhFpMA)  
 
