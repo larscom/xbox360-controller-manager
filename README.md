@@ -14,6 +14,11 @@ Support me if you would like to!
 - DirectX runtimes are required. Download [here](http://www.microsoft.com/en-us/download/confirmation.aspx?id=8109)
 
  # 2. How does it work?
+ - Place the .exe anywhere on your PC
+ - Double click it
+ - At the bottom right, an icon appears in the taskbar
+ - Press right mouse button on it for 'autostart on startup' or battery status!   
+ 
 [![Download](https://assets.larscom.nl/xbox360/youtube-video.png)](https://www.youtube.com/watch?v=63WBfvhFpMA)  
 
  # 3. Download
