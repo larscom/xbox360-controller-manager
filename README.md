@@ -1,4 +1,4 @@
-![xbox-360-controller-manager](https://assets.larscom.nl/xbox360/header-text.png)
+![xbox-360-controller-manager](https://monosnap.com/file/EOwdGwIPkctKRdKH0naCTe8VxTht2a.png)
 ### Turn off your wireless XBOX 360 controller by holding the **START** & **BACK** button
   - Works with Windows 10!
   - Supports up to 4 controllers
@@ -20,10 +20,10 @@ Support me if you would like to!
  - Press right mouse button on the icon for 'autostart on startup', battery status or left click on one of the controllers to turn it off
  - Press and **hold** both the **'START'** and **'BACK'** button at the same time to turn off the controller
  
-[![Download](https://assets.larscom.nl/xbox360/youtube-video.png)](https://www.youtube.com/watch?v=63WBfvhFpMA)  
+[![Download](https://monosnap.com/file/HwmFuC683T48sg55NsMgATTWg3eZxx.png)](https://www.youtube.com/watch?v=63WBfvhFpMA)  
 
  # 3. Download
-[![Download](https://assets.larscom.nl/xbox360/download-button.png)](http://www.mediafire.com/file/nt7v5ibcu1ctc86)         
+[![Download](https://monosnap.com/file/pWogo4kEK2rjt7Qxzcdhs1CzBIysTq.png)](http://www.mediafire.com/file/nt7v5ibcu1ctc86)         
 
 ---------------------------------------------------------------------------------------------
 
