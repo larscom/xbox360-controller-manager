@@ -22,8 +22,8 @@ Support me if you would like to!
  
 [![Download](https://monosnap.com/file/HwmFuC683T48sg55NsMgATTWg3eZxx.png)](https://www.youtube.com/watch?v=63WBfvhFpMA)  
 
- # 3. Download
-[![Download](https://monosnap.com/file/pWogo4kEK2rjt7Qxzcdhs1CzBIysTq.png)](http://www.mediafire.com/file/nt7v5ibcu1ctc86)         
+ # 3. Download Latest Version
+[![Download](https://monosnap.com/file/pWogo4kEK2rjt7Qxzcdhs1CzBIysTq.png)](https://firebasestorage.googleapis.com/v0/b/xbox360-controller-manager.appspot.com/o/2.1.0.0%2FXBOX360_Controller.zip?alt=media&token=de3eb510-e136-4906-a0ae-f4210ab6e373)         
 
 ---------------------------------------------------------------------------------------------
 
@@ -33,7 +33,12 @@ A : Install the DirectX runtimes -> See Requirements
 
 # Change log
 
-Version 2.0 (April 19, 2017) (Current)
+Version 2.1 (September 30, 2017) (Current)
+- Added textual battery status
+- Version checker
+- Minor improvements
+
+Version 2.0 (April 19, 2017)
 - **Controllers will now turn off on computer shutdown**
 - Added an option in the contextmenu to auto start the application on windows startup. (this means you can put the .exe anywhere on your pc)
 - When you click on a controller in the contextmenu it'll also turn off  
