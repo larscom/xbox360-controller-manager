@@ -23,7 +23,7 @@ Support me if you would like to!
 [![Download](https://monosnap.com/file/HwmFuC683T48sg55NsMgATTWg3eZxx.png)](https://www.youtube.com/watch?v=63WBfvhFpMA)  
 
  # 3. Download Latest Version
-[![Download](https://monosnap.com/file/pWogo4kEK2rjt7Qxzcdhs1CzBIysTq.png)](https://firebasestorage.googleapis.com/v0/b/xbox360-controller-manager.appspot.com/o/2.1.0.0%2FXBOX360_Controller.zip?alt=media&token=de3eb510-e136-4906-a0ae-f4210ab6e373)         
+[![Download](https://monosnap.com/file/pWogo4kEK2rjt7Qxzcdhs1CzBIysTq.png)](https://firebasestorage.googleapis.com/v0/b/xbox360-controller-manager.appspot.com/o/2.2%2FXBOX360_Controller.zip?alt=media&token=0cdfd946-a35d-4578-9fdb-869bf4c29379)         
 
 ---------------------------------------------------------------------------------------------
 
@@ -33,7 +33,10 @@ A : Install the DirectX runtimes -> See Requirements
 
 # Change log
 
-Version 2.1 (September 30, 2017) (Current)
+Version 2.2 (October 04, 2017) (Current)
+- Bug fix
+
+Version 2.1 (September 30, 2017)
 - Added textual battery status
 - Version checker
 - Minor improvements
