@@ -22,7 +22,7 @@ Support me if you would like to!
  
 [![Download](https://monosnap.com/file/HwmFuC683T48sg55NsMgATTWg3eZxx.png)](https://www.youtube.com/watch?v=63WBfvhFpMA)  
 
- # 3. Download Latest Version
+ # 3. Download Latest Version (2.2)
 [![Download](https://monosnap.com/file/pWogo4kEK2rjt7Qxzcdhs1CzBIysTq.png)](https://firebasestorage.googleapis.com/v0/b/xbox360-controller-manager.appspot.com/o/2.2%2FXBOX360_Controller.zip?alt=media&token=0cdfd946-a35d-4578-9fdb-869bf4c29379)         
 
 ---------------------------------------------------------------------------------------------
