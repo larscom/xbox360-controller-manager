@@ -68,13 +68,13 @@
     }),
     methods: {
       download: function () {
-        this.loading = true;
+        this.loading = true
         axios.get('https://us-central1-xbox360-controller-manager.cloudfunctions.net/download').then(response => {
-          console.log('test: ', response.data);
-          this.loading = false;
-          window.location = response.data.link_download;
+          console.log('test: ', response.data)
+          this.loading = false
+          window.location = response.data.link_download
         }).catch(() => {
-          this.loading = false;
+          this.loading = false
         })
       }
     }

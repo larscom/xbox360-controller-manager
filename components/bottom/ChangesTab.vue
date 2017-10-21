@@ -3,87 +3,27 @@
     <v-card flat>
       <v-card-text>
 
+        <app-loader :loading="loading" :size="75" :width="2"></app-loader>
 
-        <v-container grid-list-lg>
+        <v-container grid-list-lg v-if="!loading">
           <v-layout row wrap>
 
-            <v-flex md3 lg3 sm12 xs12>
+            <v-flex md3 lg3 sm12 xs12 v-for="(change, index) in changes" :key="change.version">
               <v-toolbar class="blue-grey darken-1" dark>
+                <span><strong>V{{change.version}}</strong></span>
                 <v-spacer></v-spacer>
-                <v-icon large color="light-green accent-3">done</v-icon>
+                <span>{{change.date | date}}</span>
+                <v-spacer></v-spacer>
+                <v-icon v-if="index === 0" medium color="blue lighten-1" title="This is the latest version.">
+                  new_releases
+                </v-icon>
               </v-toolbar>
               <v-card>
-                <v-card-text>3</v-card-text>
-              </v-card>
-            </v-flex>
-
-            <v-flex md3 lg3 sm12 xs12>
-              <v-toolbar class="blue-grey darken-1" dark>
-                <v-spacer></v-spacer>
-                <v-icon large color="light-green accent-3">done</v-icon>
-              </v-toolbar>
-              <v-card>
-                <v-card-text>3</v-card-text>
-              </v-card>
-            </v-flex>
-
-            <v-flex md3 lg3 sm12 xs12>
-              <v-toolbar class="blue-grey darken-1" dark>
-                <v-spacer></v-spacer>
-                <v-icon large color="light-green accent-3">done</v-icon>
-              </v-toolbar>
-              <v-card>
-                <v-card-text>3</v-card-text>
-              </v-card>
-            </v-flex>
-
-            <v-flex md3 lg3 sm12 xs12>
-              <v-toolbar class="blue-grey darken-1" dark>
-                <v-spacer></v-spacer>
-                <v-icon large color="light-green accent-3">done</v-icon>
-              </v-toolbar>
-              <v-card>
-                <v-card-text>3</v-card-text>
-              </v-card>
-            </v-flex>
-
-            <v-flex md3 lg3 sm12 xs12>
-              <v-toolbar class="blue-grey darken-1" dark>
-                <v-spacer></v-spacer>
-                <v-icon large color="light-green accent-3">done</v-icon>
-              </v-toolbar>
-              <v-card>
-                <v-card-text>3</v-card-text>
-              </v-card>
-            </v-flex>
-
-            <v-flex md3 lg3 sm12 xs12>
-              <v-toolbar class="blue-grey darken-1" dark>
-                <v-spacer></v-spacer>
-                <v-icon large color="light-green accent-3">done</v-icon>
-              </v-toolbar>
-              <v-card>
-                <v-card-text>3</v-card-text>
-              </v-card>
-            </v-flex>
-
-            <v-flex md3 lg3 sm12 xs12>
-              <v-toolbar class="blue-grey darken-1" dark>
-                <v-spacer></v-spacer>
-                <v-icon large color="light-green accent-3">done</v-icon>
-              </v-toolbar>
-              <v-card>
-                <v-card-text>3</v-card-text>
-              </v-card>
-            </v-flex>
-
-            <v-flex md3 lg3 sm12 xs12>
-              <v-toolbar class="blue-grey darken-1" dark>
-                <v-spacer></v-spacer>
-                <v-icon large color="light-green accent-3">done</v-icon>
-              </v-toolbar>
-              <v-card>
-                <v-card-text>3</v-card-text>
+                <v-card-text>
+                  <ul>
+                    <li v-for="update in change.updates">{{update.text}}</li>
+                  </ul>
+                </v-card-text>
               </v-card>
             </v-flex>
 
@@ -96,15 +36,31 @@
 </template>
 
 <script>
+  import Loader from '../Loader'
+  import axios from 'axios'
+
   export default {
     props: {
       isTabActive: Boolean
     },
+    data: () => ({
+      loading: false,
+      changes: null
+    }),
+    components: {
+      'app-loader': Loader
+    },
     watch: {
       isTabActive: function (value) {
-        if (!value) return;
-        console.log('changes active?: ', value);
+        if (!value) return
+        this.loading = true
+        axios.get('https://us-central1-xbox360-controller-manager.cloudfunctions.net/changes').then(response => {
+          this.changes = response.data
+          this.loading = false
+        }).catch(() => {
+          this.loading = false
+        })
       }
-    },
+    }
   }
 </script>

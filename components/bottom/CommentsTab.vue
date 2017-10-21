@@ -1,20 +1,21 @@
 <template>
-  <v-tabs-content id="tab-comments" key="tab-comments">
-    <v-card flat>
-      <v-card-text>Comments Tab</v-card-text>
-    </v-card>
+  <v-tabs-content id="tab-comments" key="tab-comments" class="pa-3">
+    <!--<v-card flat>-->
+    <!--<v-card-text>-->
+    <!--<disqus shortname="xbox360-controller-manager" identifier="xbox360-controller-manager" url="https://xbox360controller.software"></disqus>-->
+    <!--</v-card-text>-->
+    <!--</v-card>-->
   </v-tabs-content>
 </template>
 <script>
-  export default {
-    props: {
-      isTabActive: Boolean
-    },
-    watch: {
-      isTabActive: function (value) {
-        if (!value) return;
-        console.log('comments active?: ', value);
-      }
-    },
-  }
+  //  import VueDisqus from 'vue-disqus/VueDisqus';
+  //
+  //  export default {
+  //    components: {
+  //      'disqus' : VueDisqus
+  //    }
+  //  }
 </script>
+<style scoped>
+
+</style>

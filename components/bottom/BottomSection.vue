@@ -15,7 +15,7 @@
             </v-tabs-item>
           </v-tabs-bar>
           <v-tabs-items>
-            <app-comments-tab :isTabActive="activeTab === 'tab-comments'"></app-comments-tab>
+            <app-comments-tab></app-comments-tab>
             <app-changes-tab :isTabActive="activeTab === 'tab-changes'"></app-changes-tab>
           </v-tabs-items>
         </v-tabs>
@@ -25,8 +25,8 @@
 </template>
 
 <script>
-  import ChangesTab from './ChangesTab';
-  import CommentsTab from './CommentsTab';
+  import ChangesTab from './ChangesTab'
+  import CommentsTab from './CommentsTab'
 
   export default {
     data: () => ({
