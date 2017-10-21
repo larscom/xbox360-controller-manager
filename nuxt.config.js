@@ -2,8 +2,8 @@ module.exports = {
   head: {
     title: 'XBOX 360 Controller Manager',
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui' },
+      {charset: 'utf-8'},
+      {name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui'},
       {
         hid: 'description',
         name: 'description',
@@ -11,14 +11,14 @@ module.exports = {
       }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
     ]
   },
   plugins: ['~plugins/filters.js'],
   modules: [
     '@nuxtjs/vuetify'
   ],
-  loading: { color: '#fdd835' },
+  loading: {color: '#fdd835'},
   build: {
     vendor: ['axios'],
     extend (config, ctx) {
@@ -31,4 +31,4 @@ module.exports = {
       }
     }
   }
-};
+}

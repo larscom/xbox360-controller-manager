@@ -7,7 +7,7 @@
     <v-container class="mt-5">
 
       <!--<v-alert v-if="error.show" class="mb-1" color="error" icon="warning" dismissible v-model="error">-->
-        <!--{{error.message}}-->
+      <!--{{error.message}}-->
       <!--</v-alert>-->
 
       <app-top-section></app-top-section>
@@ -25,11 +25,11 @@
 </template>
 
 <script>
-  import Header from '../components/Header';
-  import Footer from '../components/Footer';
-  import TopSection from '../components/top/TopSection';
-  import MiddleSection from '../components/middle/MiddleSection';
-  import BottomSection from '../components/bottom/BottomSection';
+  import Header from '../components/Header'
+  import Footer from '../components/Footer'
+  import TopSection from '../components/top/TopSection'
+  import MiddleSection from '../components/middle/MiddleSection'
+  import BottomSection from '../components/bottom/BottomSection'
 
   export default {
     components: {
@@ -44,10 +44,4 @@
 
 <style>
   @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons');
-
-  .progress-linear {
-    height: 5px !important;
-    padding: 0;
-    margin:0;
-  }
 </style>

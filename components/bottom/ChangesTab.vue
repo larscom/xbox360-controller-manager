@@ -1,5 +1,5 @@
 <template>
-  <v-tabs-content id="tab-changes" key="tab-changes">
+  <v-tabs-content id="tab-changes" key="tab-changes" class="pa-3">
     <v-card flat>
       <v-card-text>
 
