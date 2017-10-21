@@ -3,7 +3,7 @@
     <v-card flat>
       <v-card-text>
         <disqus shortname="xbox360-controller-manager"
-                url="https://xbox360controller.software"></disqus>
+                url="https://xbox360controller.software/"></disqus>
       </v-card-text>
     </v-card>
   </v-tabs-content>
