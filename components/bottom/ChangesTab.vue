@@ -38,6 +38,7 @@
 <script>
   import Loader from '../Loader'
   import axios from 'axios'
+  import eventHub from '../../plugins/event-hub'
 
   export default {
     props: {
@@ -59,6 +60,7 @@
           this.loading = false
         }).catch(() => {
           this.loading = false
+          eventHub.$emit('error', {show: true, message: 'There was an error retrieving changes.'})
         })
       }
     }

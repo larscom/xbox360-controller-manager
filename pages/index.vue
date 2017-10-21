@@ -6,9 +6,9 @@
 
     <v-container class="mt-5">
 
-      <!--<v-alert v-if="error.show" class="mb-1" color="error" icon="warning" dismissible v-model="error">-->
-      <!--{{error.message}}-->
-      <!--</v-alert>-->
+      <v-alert v-if="error.show" class="mb-1" color="error" icon="warning" dismissible v-model="error">
+        {{error.message}}
+      </v-alert>
 
       <app-top-section></app-top-section>
 
@@ -30,14 +30,26 @@
   import TopSection from '../components/top/TopSection'
   import MiddleSection from '../components/middle/MiddleSection'
   import BottomSection from '../components/bottom/BottomSection'
+  import eventHub from '../plugins/event-hub'
 
   export default {
+    data: () => ({
+      error: {
+        show: false,
+        message: null
+      }
+    }),
     components: {
       'app-header': Header,
       'app-footer': Footer,
       'app-top-section': TopSection,
       'app-middle-section': MiddleSection,
       'app-bottom-section': BottomSection
+    },
+    mounted () {
+      eventHub.$on('error', (error) => {
+        this.error = error;
+      })
     }
   }
 </script>

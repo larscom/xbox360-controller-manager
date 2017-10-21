@@ -14,7 +14,7 @@ module.exports = {
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
     ]
   },
-  plugins: ['~plugins/filters.js'],
+  plugins: ['~plugins/filters.js','~plugins/event-hub.js'],
   modules: [
     '@nuxtjs/vuetify'
   ],

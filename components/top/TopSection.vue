@@ -39,6 +39,7 @@
 
 <script>
   import axios from 'axios'
+  import eventHub from '../../plugins/event-hub'
 
   export default {
     data: () => ({
@@ -70,11 +71,11 @@
       download: function () {
         this.loading = true
         axios.get('https://us-central1-xbox360-controller-manager.cloudfunctions.net/download').then(response => {
-          console.log('test: ', response.data)
           this.loading = false
           window.location = response.data.link_download
         }).catch(() => {
           this.loading = false
+          eventHub.$emit('error', {show: true, message: 'There was an error retrieving download information.'})
         })
       }
     }
