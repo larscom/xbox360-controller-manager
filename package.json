@@ -23,7 +23,7 @@
     "axios": "^0.16.2",
     "nuxt": "^1.0.0-rc11",
     "vue-disqus": "^2.0.3",
-    "vuetify": "^0.16.3"
+    "vuetify": "^0.16.9"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
