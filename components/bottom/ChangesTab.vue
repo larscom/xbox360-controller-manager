@@ -60,7 +60,8 @@
         axios.get('https://us-central1-xbox360-controller-manager.cloudfunctions.net/changes').then(response => {
           this.changes = response.data
           this.loading = false
-        }).catch(() => {
+        }).catch(error => {
+          this.$ga.exception(error)
           this.loading = false
           eventHub.$emit('error', {show: true, message: 'There was an error retrieving changes.'})
         })

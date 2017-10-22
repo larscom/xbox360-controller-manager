@@ -69,11 +69,13 @@
     }),
     methods: {
       download: function () {
+        this.$ga.event('download', 'click')
         this.loading = true
         axios.get('https://us-central1-xbox360-controller-manager.cloudfunctions.net/download').then(response => {
           this.loading = false
           window.location = response.data.link_download
-        }).catch(() => {
+        }).catch(error => {
+          this.$ga.exception(error)
           this.loading = false
           eventHub.$emit('error', {show: true, message: 'There was an error retrieving download information.'})
         })

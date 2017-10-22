@@ -18,6 +18,7 @@
         window.location = '/'
       },
       donate: () => {
+        this.$ga.event('donate', 'click')
         window.open('https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6MLLT5T7XDNWQ', '_blank')
       }
     }
