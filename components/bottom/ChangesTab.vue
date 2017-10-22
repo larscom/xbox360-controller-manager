@@ -14,7 +14,7 @@
                 <v-spacer></v-spacer>
                 <span>{{change.date | date}}</span>
                 <v-spacer></v-spacer>
-                <v-icon v-if="index === 0" medium color="blue lighten-1" title="This is the latest version.">
+                <v-icon v-if="index === 0" medium color="yellow darken-1" title="This is the latest version.">
                   new_releases
                 </v-icon>
               </v-toolbar>
