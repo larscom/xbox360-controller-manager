@@ -54,6 +54,8 @@
     watch: {
       isTabActive: function (value) {
         if (!value) return
+        this.$ga.event('changes', 'click')
+
         this.loading = true
         axios.get('https://us-central1-xbox360-controller-manager.cloudfunctions.net/changes').then(response => {
           this.changes = response.data

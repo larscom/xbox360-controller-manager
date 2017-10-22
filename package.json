@@ -22,6 +22,7 @@
     "@nuxtjs/vuetify": "^0.1.1",
     "axios": "^0.16.2",
     "nuxt": "^1.0.0-rc11",
+    "vue-analytics": "^5.1.1",
     "vue-disqus": "^2.0.3",
     "vuetify": "^0.16.9"
   },
