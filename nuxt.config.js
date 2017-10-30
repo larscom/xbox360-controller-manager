@@ -28,15 +28,15 @@ module.exports = {
       {rel: 'canonical', href: 'https://xbox360controller.software'},
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
       {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'}
-    ],
-    script:[
-      { src: '//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js' , async: 'true'}
     ]
   },
   plugins: ['~plugins/filters.js', '~plugins/event-hub.js', '~plugins/analytics.js'],
   modules: [
     '@nuxtjs/vuetify'
   ],
+  // generate: {
+  //   routes: ['404']
+  // },
   loading: {color: '#fdd835'},
   build: {
     vendor: ['axios'],

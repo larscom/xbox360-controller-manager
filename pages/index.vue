@@ -3,12 +3,6 @@
   <v-app class="grey lighten-3">
 
     <app-header></app-header>
-    <v-layout row wrap>
-      <v-flex>
-        <adsense adClient="ca-pub-3490692845417843" adSlot="3162154194"></adsense>
-      </v-flex>
-    </v-layout>
-
 
     <v-container class="mt-5">
 
@@ -36,7 +30,6 @@
   import TopSection from '../components/top/TopSection'
   import MiddleSection from '../components/middle/MiddleSection'
   import BottomSection from '../components/bottom/BottomSection'
-  import Adsense from '../components/Adsense'
   import eventHub from '../plugins/event-hub'
 
   export default {
@@ -51,8 +44,7 @@
       'app-footer': Footer,
       'app-top-section': TopSection,
       'app-middle-section': MiddleSection,
-      'app-bottom-section': BottomSection,
-      'adsense': Adsense
+      'app-bottom-section': BottomSection
     },
     mounted () {
       eventHub.$on('error', (error) => {
