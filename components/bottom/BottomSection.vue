@@ -35,6 +35,9 @@
     components: {
       'app-comments-tab': CommentsTab,
       'app-changes-tab': ChangesTab
+    },
+    mounted: function () {
+      if (this.$nuxt.$route.query.changes) this.activeTab = 'tab-changes'
     }
   }
 </script>
