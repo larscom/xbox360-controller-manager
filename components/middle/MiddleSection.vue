@@ -34,15 +34,16 @@
       <v-flex md4 lg4 sm12 xs12>
         <v-card>
           <v-card-text>
-            <h5 class="mb-1 headline">How to turn off Controllers</h5>
+            <h5 class="mb-1 headline">How to use</h5>
             <ul>
-              <li>Press and hold '<strong>START and BACK</strong>' on the controller at the same time</li>
-              <li>Right click the icon in the taskbar, bottom right and left click on a controller</li>
-              <li>Shutdown your computer</li>
+              <li>Press and hold <img width="16px" height="16px" src="/images/controller-buttons/back.png" alt="XBOX 360 Controller Back Button"> and <img width="16px" height="16px" src="/images/controller-buttons/start.png" alt="XBOX 360 Controller Start Button"> on the controller to turn it OFF</li>
+              <li>Press and hold <img width="16px" height="16px" src="/images/controller-buttons/back.png" alt="XBOX 360 Controller Back Button"> and <img width="16px" height="16px" src="/images/controller-buttons/b.png" alt="XBOX 360 Controller B Button"> on the controller to get a notification about the battery</li>
+              <li><strong>Click</strong> the taskbar icon: <img width="16px" height="16px" src="/favicon.ico" alt="XBOX 360 Controller Manager Logo"> to show battery information about all connected controllers</li>
             </ul>
           </v-card-text>
         </v-card>
       </v-flex>
+
     </v-layout>
   </v-container>
 </template>
