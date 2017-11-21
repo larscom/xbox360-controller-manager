@@ -34,9 +34,9 @@ module.exports = {
   modules: [
     '@nuxtjs/vuetify'
   ],
-  generate: {
-    routes: ['404']
-  },
+  // generate: {
+  //   routes: ['404']
+  // },
   loading: {color: '#fdd835'},
   build: {
     vendor: ['axios'],
