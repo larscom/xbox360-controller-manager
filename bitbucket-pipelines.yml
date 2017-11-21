@@ -4,6 +4,7 @@ pipelines:
  default:
    - step:
       script: 
+      - npm -g config set user root
       - npm install
       - npm install -g firebase-tools
       - npm install --prefix functions      
