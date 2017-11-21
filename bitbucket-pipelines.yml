@@ -1,12 +1,13 @@
 image: node:latest
 
 pipelines:
- default:
-   - step:
-      script: 
-      - npm -g config set user root
-      - npm install
-      - npm install -g firebase-tools
-      - npm install --prefix functions      
-      - npm run generate
-      - firebase deploy --token=$FIREBASE_TOKEN --project xbox360-controller-manager --non-interactive
+ branches:
+  master:
+    - step:
+       script: 
+       - npm -g config set user root
+       - npm install
+       - npm install -g firebase-tools
+       - npm install --prefix functions      
+       - npm run generate
+       - firebase deploy --token=$FIREBASE_TOKEN --project xbox360-controller-manager --non-interactive
