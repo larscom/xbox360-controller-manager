@@ -12,20 +12,23 @@
 </template>
 
 <script>
-  export default {
-    methods: {
-      home: () => {
-        window.location = '/'
-      },
-      donate: () => {
-        this.$ga.event('donate', 'click')
-        window.open('https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6MLLT5T7XDNWQ', '_blank')
-      }
+export default {
+  methods: {
+    home: () => {
+      window.location = '/';
+    },
+    donate: () => {
+      this.$ga.event('donate', 'click');
+      window.open(
+        'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6MLLT5T7XDNWQ',
+        '_blank'
+      );
     }
   }
+};
 </script>
 <style scoped>
-  img {
-    cursor: pointer;
-  }
+img {
+  cursor: pointer;
+}
 </style>

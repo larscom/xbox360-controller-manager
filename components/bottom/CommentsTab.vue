@@ -9,13 +9,13 @@
   </v-tabs-content>
 </template>
 <script>
-  import VueDisqus from 'vue-disqus/VueDisqus.vue'
+import VueDisqus from 'vue-disqus/VueDisqus.vue';
 
-  export default {
-    components: {
-      'disqus': VueDisqus
-    }
+export default {
+  components: {
+    disqus: VueDisqus
   }
+};
 </script>
 <style scoped>
 

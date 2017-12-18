@@ -7,8 +7,8 @@
 </template>
 
 <style scoped>
-  .footer {
-    background-color: #37474f;
-    color: white;
-  }
+.footer {
+  background-color: #37474f;
+  color: white;
+}
 </style>

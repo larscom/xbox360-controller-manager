@@ -6,11 +6,11 @@
   </v-layout>
 </template>
 <script>
-  export default {
-    props: {
-      loading: Boolean,
-      size: Number,
-      width: Number
-    }
+export default {
+  props: {
+    loading: Boolean,
+    size: Number,
+    width: Number
   }
+};
 </script>

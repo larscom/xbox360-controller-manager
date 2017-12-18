@@ -25,19 +25,19 @@
 </template>
 
 <script>
-  import ChangesTab from './ChangesTab'
-  import CommentsTab from './CommentsTab'
+import ChangesTab from './ChangesTab';
+import CommentsTab from './CommentsTab';
 
-  export default {
-    data: () => ({
-      activeTab: null
-    }),
-    components: {
-      'app-comments-tab': CommentsTab,
-      'app-changes-tab': ChangesTab
-    },
-    mounted: function () {
-      if (this.$nuxt.$route.query.changes) this.activeTab = 'tab-changes'
-    }
+export default {
+  data: () => ({
+    activeTab: null
+  }),
+  components: {
+    'app-comments-tab': CommentsTab,
+    'app-changes-tab': ChangesTab
+  },
+  mounted: function() {
+    if (this.$nuxt.$route.query.changes) this.activeTab = 'tab-changes';
   }
+};
 </script>

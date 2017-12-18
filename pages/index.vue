@@ -25,31 +25,31 @@
 </template>
 
 <script>
-  import Header from '../components/Header'
-  import Footer from '../components/Footer'
-  import TopSection from '../components/top/TopSection'
-  import MiddleSection from '../components/middle/MiddleSection'
-  import BottomSection from '../components/bottom/BottomSection'
-  import eventHub from '../plugins/event-hub'
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import TopSection from '../components/top/TopSection';
+import MiddleSection from '../components/middle/MiddleSection';
+import BottomSection from '../components/bottom/BottomSection';
+import eventHub from '../plugins/event-hub';
 
-  export default {
-    data: () => ({
-      error: {
-        show: false,
-        message: null
-      }
-    }),
-    components: {
-      'app-header': Header,
-      'app-footer': Footer,
-      'app-top-section': TopSection,
-      'app-middle-section': MiddleSection,
-      'app-bottom-section': BottomSection
-    },
-    mounted () {
-      eventHub.$on('error', (error) => {
-        this.error = error
-      })
+export default {
+  data: () => ({
+    error: {
+      show: false,
+      message: null
     }
+  }),
+  components: {
+    'app-header': Header,
+    'app-footer': Footer,
+    'app-top-section': TopSection,
+    'app-middle-section': MiddleSection,
+    'app-bottom-section': BottomSection
+  },
+  mounted() {
+    eventHub.$on('error', error => {
+      this.error = error;
+    });
   }
+};
 </script>

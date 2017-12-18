@@ -21,7 +21,7 @@
               <v-card>
                 <v-card-text>
                   <ul>
-                    <li v-for="update in change.updates">{{update.text}}</li>
+                    <li v-for="update in change.updates" :key="update.text">{{update.text}}</li>
                   </ul>
                 </v-card-text>
               </v-card>
@@ -36,36 +36,44 @@
 </template>
 
 <script>
-  import Loader from '../Loader'
-  import axios from 'axios'
-  import eventHub from '../../plugins/event-hub'
+import Loader from '../Loader';
+import axios from 'axios';
+import eventHub from '../../plugins/event-hub';
 
-  export default {
-    props: {
-      isTabActive: Boolean
-    },
-    data: () => ({
-      loading: false,
-      changes: null
-    }),
-    components: {
-      'app-loader': Loader
-    },
-    watch: {
-      isTabActive: function (value) {
-        if (!value) return
-        this.$ga.event('changes', 'click')
+export default {
+  props: {
+    isTabActive: Boolean
+  },
+  data: () => ({
+    loading: false,
+    changes: null
+  }),
+  components: {
+    'app-loader': Loader
+  },
+  watch: {
+    isTabActive: function(value) {
+      if (!value) return;
+      this.$ga.event('changes', 'click');
 
-        this.loading = true
-        axios.get('https://us-central1-xbox360-controller-manager.cloudfunctions.net/changes').then(response => {
-          this.changes = response.data
-          this.loading = false
-        }).catch(error => {
-          this.$ga.exception(error)
-          this.loading = false
-          eventHub.$emit('error', {show: true, message: 'There was an error retrieving changes.'})
+      this.loading = true;
+      axios
+        .get(
+          'https://us-central1-xbox360-controller-manager.cloudfunctions.net/changes'
+        )
+        .then(response => {
+          this.changes = response.data;
+          this.loading = false;
         })
-      }
+        .catch(error => {
+          this.$ga.exception(error);
+          this.loading = false;
+          eventHub.$emit('error', {
+            show: true,
+            message: 'There was an error retrieving changes.'
+          });
+        });
     }
   }
+};
 </script>
