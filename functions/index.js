@@ -56,14 +56,14 @@ exports.changes = functions.https.onRequest((request, response) => {
     .catch(error => console.error(error));
 });
 
-exports.onNewVersionFileAdded = functions.storage.object().onChange(event => {
-  const object = event.data;
+exports.onNewVersionFileAdded = functions.storage.object().onFinalize(object => {
+  console.info('onNewVersionFileAdded: ', object);
+
   //only if version.json file is created
-  if (
-    !object.name.includes('version.json') ||
-    object.resourceState !== 'exists'
-  )
+  if (!object.name.includes('version.json') || +object.metageneration > 1) {
     return Promise.resolve();
+  }
+
   console.info('Detected new version.json file!', object);
 
   return storage
@@ -77,10 +77,7 @@ exports.onNewVersionFileAdded = functions.storage.object().onChange(event => {
     })
     .then(version => {
       if (version) {
-        console.info(
-          'version.json downloaded from bucket, creating document...',
-          version
-        );
+        console.info('version.json downloaded from bucket, creating document...', version);
         return admin
           .firestore()
           .collection('changes')

@@ -1,2 +1,12 @@
-![xbox-360-controller-manager](https://monosnap.com/file/EOwdGwIPkctKRdKH0naCTe8VxTht2a.png)
-### Website has moved to https://xbox360controller.software/  
+# XBOX 360 Controller Manager
+
+> Production URL: https://xbox360controller.software   
+> Development URL: http://localhost:3000  
+
+
+## Run (Development) 
+
+``` bash
+# serve with hot reload at localhost:3000
+$ npm run dev
+```

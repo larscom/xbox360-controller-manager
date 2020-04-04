@@ -1,26 +1,28 @@
 <template>
+  <div>
+    <img v-if="usesInternetExplorer" src="/images/ie.png" alt="Browser not Supported!" title="Browser not Supported!">
+    <v-app v-if="!usesInternetExplorer" class="grey lighten-3">
 
-  <v-app class="grey lighten-3">
+      <app-header></app-header>
 
-    <app-header></app-header>
+      <v-container class="mt-5">
 
-    <v-container class="mt-5">
+        <v-alert v-if="error.show" class="mb-1" color="error" icon="warning" dismissible v-model="error">
+          {{ error.message }}
+        </v-alert>
 
-      <v-alert v-if="error.show" class="mb-1" color="error" icon="warning" dismissible v-model="error">
-        {{error.message}}
-      </v-alert>
+        <app-top-section></app-top-section>
 
-      <app-top-section></app-top-section>
+        <app-middle-section></app-middle-section>
 
-      <app-middle-section></app-middle-section>
+        <app-bottom-section></app-bottom-section>
 
-      <app-bottom-section></app-bottom-section>
+      </v-container>
 
-    </v-container>
+      <app-footer></app-footer>
 
-    <app-footer></app-footer>
-
-  </v-app>
+    </v-app>
+  </div>
 
 </template>
 
@@ -34,6 +36,7 @@ import eventHub from '../plugins/event-hub';
 
 export default {
   data: () => ({
+    usesInternetExplorer: false,
     error: {
       show: false,
       message: null
@@ -47,9 +50,16 @@ export default {
     'app-bottom-section': BottomSection
   },
   mounted() {
+    this.usesInternetExplorer = document.documentMode != null;
     eventHub.$on('error', error => {
       this.error = error;
     });
   }
 };
 </script>
+<style scoped>
+img {
+  display: block;
+  margin: auto;
+}
+</style>
