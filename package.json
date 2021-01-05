@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@nuxtjs/vuetify": "^0.1.1",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "nuxt": "^2.12.2",
     "vue-analytics": "^5.22.1",
     "vue-disqus": "^2.0.6",
