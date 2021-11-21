@@ -24,16 +24,14 @@ Turn off multiple wireless XBOX 360 controllers simultaneously and see the batte
 - DirectX runtimes
     - https://www.microsoft.com/en-us/download/confirmation.aspx?id=8109
 
-## Windows Settings
+## How to use
+![how_to_use](https://github.com/larscom/xbox360-controller-manager/blob/master/images/howto.png?raw=true)
+
+## Using the guide button in Windows
 If you wish to use the 'guide' button to turn off the controller (which is configurable in the menu, default is 'start & back')
 you need to go to 'Xbox Game Bar' settings in Windows and leave the 'Xbox Game Bar' ON, but turn OFF the setting: 'Open Xbox Game Bar using this button on a controller' 
 
 ![windows_settings](https://github.com/larscom/xbox360-controller-manager/blob/master/images/gamebar_settings.png?raw=true)
-
-
-## How to use
-![how_to_use](https://github.com/larscom/xbox360-controller-manager/blob/master/images/howto.png?raw=true)
-
 
 ## Steam Big Picture
 Prevent Steam Big Picture from starting up when you press the GUIDE button:
